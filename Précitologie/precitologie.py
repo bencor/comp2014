@@ -1,3 +1,6 @@
+#Benjamin Correal
+#Competition informatique 2014
+
 a,b=[int(i) for i in raw_input().split()]
 n=[int(i) for i in raw_input().split()]
 d1=n[0]

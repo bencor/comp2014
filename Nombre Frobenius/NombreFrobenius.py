@@ -1,10 +1,13 @@
-sequence = sorted([int(i) for i in raw_input().split(' ')])
+#Benjamin Correal
+#Competition informatique 2014
 
-#Validate input
+sequence = sorted([int(i) for i in raw_input().split()])
+
 def gcd(a, b):
 	if b == 0: 	return a
 	else: 		return gcd(b, a % b)
-	
+
+#Validate input
 commonDiv = sequence[0]
 for x in sequence[1:]:
 	commonDiv = gcd(commonDiv, x)

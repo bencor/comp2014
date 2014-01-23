@@ -1,8 +1,11 @@
-import sys
+#Benjamin Correal
+#Competition informatique 2014
+
+from sys import stdin
 import re
 
 input = []
-for line in sys.stdin:
+for line in stdin:
 	input.append(line.replace("\n",""))
 
 number_regex = re.compile(r"(-?\d{1,3}(?:(?: \d{3})*(?:[\.,](?:\d{3} )*\d{1,3})?|\d*(?:[\.,]\d+)?)(?:(?![\.,]?\d)|(?=[\.,]\d+[\.,])))")
@@ -13,7 +16,7 @@ def convert(text):
 	return text
 	
 def split_nb(key):
-	return [convert(c.lower()) for c in number_regex.split(key) if c != '' and c != None]
+	return [convert(s.lower()) for s in number_regex.split(key) if s != '' and s != None]
 
 #Sort rely on the fact that float < string.
 

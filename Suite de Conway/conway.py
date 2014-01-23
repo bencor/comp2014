@@ -1,19 +1,22 @@
+#Benjamin Correal
+#Competition informatique 2014
+
 n=int(raw_input())
 
-con=[1]
+conway=[1]
 for i in xrange(1,n):
-	ncon=[]
-	lv=con[0]
-	lc=1
-	for j in con[1:]:
-		if j==lv:
-			lc+=1
+	nextconway=[]
+	value=conway[0]
+	count=1
+	for j in conway[1:]:
+		if j==value:
+			count+=1
 		else:
-			ncon.append(lc)
-			ncon.append(lv)
-			lv=j
-			lc=1
-	ncon.append(lc)
-	ncon.append(lv)
-	con=ncon
-print ''.join(str(i) for i in con)
+			nextconway.append(count)
+			nextconway.append(value)
+			value=j
+			count=1
+	nextconway.append(count)
+	nextconway.append(value)
+	conway=nextconway
+print ''.join(str(i) for i in conway)

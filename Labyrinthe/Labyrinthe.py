@@ -1,3 +1,6 @@
+#Benjamin Correal
+#Competition informatique 2014
+
 from sys import stdin
 from collections import defaultdict
 
@@ -23,7 +26,7 @@ def neighbours(i,j):
 	if j>0:
 		yield (i,j-1)
 
-#dist[(i,j)]=[{keys}]
+#dist is used as dist[(i,j)]=[{keys}]
 dist=defaultdict(list)
 curr_nodes=defaultdict(list)
 curr_nodes[start].append(set())

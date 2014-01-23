@@ -1,3 +1,6 @@
+#Benjamin Correal
+#Competition informatique 2014
+
 from Queue import Queue
 x = int(raw_input())
 if x <= 3:

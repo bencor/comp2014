@@ -1,10 +1,13 @@
+#Benjamin Correal
+#Competition informatique 2014
+
 x=int(raw_input())
 digitCount=[0]*10
 transition=[0]*10
 digitCount[0]=1
-if x>0:
-	transition[0]=1
+if x>0:	transition[0]=1
 add1=0
+
 digitValue=1
 n=x
 while n>0:
@@ -29,8 +32,6 @@ while n>0:
 	
 	digitCount[d]+=x%digitValue+1
 	digitValue*=10
-print digitCount
-print transition, add1
 
 digitSegmentCount=[6,2,5,5,4,5,6,3,7,6]
 digitTransitionCost=[0,4,1,1,2,1,1,4,0,1]

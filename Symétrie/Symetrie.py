@@ -1,3 +1,6 @@
+#Benjamin Correal
+#Competition informatique 2014
+
 from sys import stdin
 from math import sqrt, asin, pi
 from collections import Counter
@@ -18,7 +21,7 @@ def calcDistSquare(a,b):
 #Filtre les points qui ne sont pas susseptibles d'etre parmi les plus eloignes.
 #Determine borne inferieure B correspondant a une distance entre 2 points eloignes, puis elimine les points qui sont a une distance < B de tous les autres points.
 #En general, plus de 95% des points sont filtres pour une distribution aleatoire uniforme des points. Il existe des cas particuliers ou rien n'est filtre.
-#Cette partie n'est vraiment utile qu'a partir de quelques milliers de points, ce qui n'est pas evalue pour la competition.
+#Cette partie n'est vraiment utile qu'a partir de quelques milliers de points, ce qui depasse largement les besoins de la competition.
 def farPointsFilter(pts):
 	minX, maxX = min(pt[0] for pt in pts), max(pt[0] for pt in pts)
 	minY, maxY = min(pt[1] for pt in pts), max(pt[1] for pt in pts)

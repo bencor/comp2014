@@ -1,3 +1,6 @@
+#Benjamin Correal
+#Competition informatique 2014
+
 from math import log
 
 n=int(raw_input())
@@ -37,7 +40,7 @@ for i in xrange(2,n+1):
 if nb2>0:
 	p*=pow(2,nb2,m)
 else:
-	#This should not happen
+	#This should never happen
 	p*=pow(5,-nb2,m)
 	nbz+=nb2
 p%=m

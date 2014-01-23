@@ -1,3 +1,6 @@
+#Benjamin Correal
+#Competition informatique 2014
+
 from math import sqrt
 
 x = int(raw_input())

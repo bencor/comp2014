@@ -1,6 +1,7 @@
-from datetime import datetime
-N,t=[int(i) for i in raw_input().split(' ')]
-start=datetime.now()
+#Benjamin Correal
+#Competition informatique 2014
+
+N,t=[int(i) for i in raw_input().split()]
 
 requiredTime=0
 i=0
@@ -30,4 +31,3 @@ for i in xrange(len(sumLuby)-1,-1,-1):
 	if t==0 or nb>1: break
 
 print n, requiredTime-curr_time
-print datetime.now()-start

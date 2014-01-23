@@ -1,7 +1,10 @@
+#Benjamin Correal
+#Competition informatique 2014
+
 from math import sqrt
 from operator import mul
 
-gears = [int(i) for i in raw_input().split(' ')]
+gears = [int(i) for i in raw_input().split()]
 
 sieve_range = max(gears)
 isPrimes = range(sieve_range + 1)
@@ -24,6 +27,6 @@ def factorize(n):
 
 gearsFactors = [factorize(g) for g in gears]
 totalFactors = [max(f) for f in zip(*gearsFactors)]
-nbTurn = reduce(mul, [primes[i]**(totalFactors[i] - gearsFactors[0][i]) for i in range(len(primes))])
+nbTurn = reduce(mul, [primes[i]**(totalFactors[i] - gearsFactors[0][i]) for i in xrange(len(primes))])
 
 print nbTurn
